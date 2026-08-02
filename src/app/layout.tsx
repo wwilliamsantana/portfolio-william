@@ -3,6 +3,8 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { siteConfig } from "@/constants/siteConfig";
+import { Navbar } from "@/layout/Navbar";
+import { Footer } from "@/layout/Footer";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -41,9 +43,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geist.className}`}>
         <ThemeProvider>
-          {/* <Navbar/> */}
+          <Navbar />
           <main>{children}</main>
-          {/* <Footer/> */}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

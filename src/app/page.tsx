@@ -1,3 +1,7 @@
 export default function Home() {
-  return <h1>Welcome to My App</h1>;
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-between p-24">
+      Home
+    </div>
+  );
 }
