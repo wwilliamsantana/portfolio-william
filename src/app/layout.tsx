@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import { siteConfig } from "@/constants/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { BackgroundEffects } from "@/components/background/BackgroundEffects";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geist.className}`}>
         <ThemeProvider>
+          <BackgroundEffects />
           <Navbar />
           <main>{children}</main>
           <Footer />

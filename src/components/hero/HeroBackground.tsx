@@ -1,13 +1,11 @@
 "use client";
 
 import { motion } from "motion/react";
-import { MouseGlow } from "./MouseGlow";
 import { FloatingShapes } from "./FloatingShapes";
 
 export function HeroBackground() {
   return (
     <>
-      <MouseGlow />
       <FloatingShapes />
       <motion.div
         animate={{
