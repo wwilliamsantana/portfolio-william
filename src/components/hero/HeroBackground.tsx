@@ -1,10 +1,12 @@
 "use client";
 
 import { motion } from "motion/react";
+import { MouseGlow } from "./MouseGlow";
 
 export function HeroBackground() {
   return (
     <>
+      <MouseGlow />
       <motion.div
         animate={{
           scale: [1, 1.15, 1],
