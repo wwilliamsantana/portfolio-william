@@ -1,32 +1,43 @@
 import Link from "next/link";
+import Image from "next/image";
+import { socialLinks } from "@/constants/socialLinks";
 
-import { FolderGit2, Mail, Link as LinkLinkedin } from "lucide-react";
+const socials = [
+  {
+    icon: "/github.svg",
+    href: socialLinks.github,
+  },
+  {
+    icon: "/linkedin.svg",
+    href: socialLinks.linkedin,
+  },
+  {
+    icon: "/email.svg",
+    href: socialLinks.email,
+  },
+];
 
 export function HeroSocials() {
   return (
-    <div className="mt-12 flex items-center gap-6">
-      <Link
-        href="https://github.com/wwilliamsantana"
-        target="_blank"
-        className="text-(--muted) transition hover:text-(--foreground)"
-      >
-        <FolderGit2 size={22} />
-      </Link>
-
-      <Link
-        href="https://linkedin.com/in/wwilliamsantana"
-        target="_blank"
-        className="text-(--muted) transition hover:text-(--foreground)"
-      >
-        <LinkLinkedin size={22} />
-      </Link>
-
-      <Link
-        href="mailto:email@email.com"
-        className="text-(--muted) transition hover:text-(--foreground)"
-      >
-        <Mail size={22} />
-      </Link>
+    <div className="mt-12 flex items-center gap-10">
+      {socials.map((social) => {
+        return (
+          <Link
+            key={social.href}
+            href={social.href}
+            target="_blank"
+            className="text-(--muted) transition hover:text-(--foreground)"
+          >
+            <Image
+              className="dark:invert"
+              src={social.icon}
+              alt={social.href.replace("/", "").replace(".svg", "")}
+              width={32}
+              height={32}
+            />
+          </Link>
+        );
+      })}
     </div>
   );
 }

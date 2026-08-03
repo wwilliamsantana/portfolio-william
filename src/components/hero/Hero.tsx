@@ -3,6 +3,7 @@ import { Section } from "@/components/shared/Section";
 
 import { HeroBackground } from "./HeroBackground";
 import { HeroContent } from "./HeroContent";
+import { ScrollIndicator } from "./ScrollIndicator";
 
 export function Hero() {
   return (
@@ -10,8 +11,9 @@ export function Hero() {
       <HeroBackground />
 
       <Container>
-        <div className="relative flex min-h-[calc(100vh-80px)] items-center justify-center">
+        <div className="relative flex min-h-[calc(100vh-80px)] items-center justify-center -mt-28">
           <HeroContent />
+          <ScrollIndicator />
         </div>
       </Container>
     </Section>
