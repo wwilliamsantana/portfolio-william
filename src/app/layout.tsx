@@ -3,8 +3,8 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { siteConfig } from "@/constants/siteConfig";
-import { Navbar } from "@/layout/Navbar";
-import { Footer } from "@/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const geist = Geist({
   subsets: ["latin"],
