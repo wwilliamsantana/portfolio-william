@@ -8,7 +8,7 @@ interface Props {
 
 export function Section({ id, children, className = "" }: Props) {
   return (
-    <section id={id} className={`py-28 ${className}`}>
+    <section id={id} className={`py-24 lg:py-32 ${className}`}>
       {children}
     </section>
   );
