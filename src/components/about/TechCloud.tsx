@@ -1,4 +1,6 @@
+"use client";
 import { techStack } from "@/data/about";
+import { motion } from "framer-motion";
 
 export function TechCloud() {
   return (
@@ -7,12 +9,19 @@ export function TechCloud() {
 
       <div className=" mt-10 flex flex-wrap gap-4">
         {techStack.map((tech) => (
-          <span
+          <motion.span
             key={tech}
-            className="rounded-full border border-(--border) bg-(--surface) px-5 py-3 text-sm font-medium"
+            whileHover={{
+              scale: 1.08,
+              y: -4,
+            }}
+            transition={{
+              duration: 0.1,
+            }}
+            className="rounded-full border border-(--border) bg-(--surface) px-5 py-3 text-sm font-medium transition-all duration-300 hover:border-blue-500 hover:bg-blue-500  hover:shadow-lg "
           >
             {tech}
-          </span>
+          </motion.span>
         ))}
       </div>
     </section>
