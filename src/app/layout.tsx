@@ -4,7 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { siteConfig } from "@/constants/siteConfig";
 import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
+import { Footer } from "@/components/footer/Footer";
 import { BackgroundEffects } from "@/components/background/BackgroundEffects";
 
 const geist = Geist({

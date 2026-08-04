@@ -8,7 +8,7 @@ export function Timeline() {
 
       <div className=" relative mt-12 space-y-12 before:absolute before:left-1.25 before:top-0 before:h-full before:w-px before:bg-(--border)">
         {timeline.map((item) => (
-          <TimelineItem key={item.title} {...item} />
+          <TimelineItem key={item.role} {...item} />
         ))}
       </div>
     </section>
