@@ -32,38 +32,41 @@ export const techStack = [
   "Java",
   "Spring Boot",
   "AWS",
+  "Python",
   "Git",
   "GitHub",
   "Figma",
   "REST API",
+  "Photoshop",
 ];
 
 export const timeline = [
   {
     year: "2021 - 2025",
-    title: "Bachelor's Degree in Software Engineering",
+    company: "Unicesumar",
+    role: "Bachelor's Degree in Software Engineering",
     description:
       "Studied software engineering, algorithms, data structures and web development.",
   },
   {
     year: "2025",
-    title: "Started Backend Development",
-    description: "Building REST APIs using Java and Spring Boot.",
+    company: "FIAP",
+    role: "IT Support Intern",
+    description:
+      "Worked with technical support, infrastructure and internal systems while building a solid foundation in software development.",
   },
   {
-    year: "2025",
-    title: "Cloud & Serverless",
-    description: "Working with AWS Lambda, API Gateway and DynamoDB.",
-  },
-  {
-    year: "2025",
-    title: "Frontend Specialization",
-    description: "Focused on React, Next.js, TypeScript and UI Design.",
+    year: "2025 - 2026",
+    company: "Evertec Brasil",
+    role: "Backend Developer Intern",
+    description:
+      "Developing REST APIs with Java and Spring Boot while working with AWS cloud services and modern backend architecture.",
   },
   {
     year: "Today",
-    title: "Building Modern Interfaces",
+    role: "React & Next.js Developer",
+    company: "Frontend Engineering",
     description:
-      "Creating polished digital products with performance and UX in mind.",
+      "Designing modern, responsive and accessible interfaces focused on performance, user experience and clean architecture.",
   },
 ];

@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 
 interface Props {
   year: string;
-  title: string;
+  role: string;
+  company: string;
   description: string;
 }
 
-export function TimelineItem({ year, title, description }: Props) {
+export function TimelineItem({ year, role, company, description }: Props) {
   return (
     <motion.article
       initial={{ opacity: 0, y: -30 }}
@@ -24,7 +25,8 @@ export function TimelineItem({ year, title, description }: Props) {
       />
 
       <span className="text-sm font-semibold text-blue-500">{year}</span>
-      <h3 className="mt-2 text-xl font-semibold">{title}</h3>
+      <h3 className="mt-2 text-xl font-semibold">{role}</h3>
+      <p className="mt-2 text-(--muted) font-bold">{company}</p>
       <p className="mt-2 text-(--muted)">{description}</p>
     </motion.article>
   );
