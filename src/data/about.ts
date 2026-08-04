@@ -24,7 +24,7 @@ export const highlights = [
 ];
 
 export const techStack = [
-  "React",
+  "React.js",
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
