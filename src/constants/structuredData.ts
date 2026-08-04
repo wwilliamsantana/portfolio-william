@@ -4,8 +4,8 @@ export const jsonLd = {
     {
       "@type": "Person",
       name: "William Santana",
-      url: "https://williamsantana.dev",
-      image: "https://williamsantana.dev/og-image.png",
+      url: "https://portfolio-william-nu.vercel.app",
+      image: "https://portfolio-william-nu.vercel.app/og-image.png",
       jobTitle: "Frontend Engineer",
       description:
         "Frontend Engineer specialized in React, Next.js and TypeScript.",
@@ -17,7 +17,7 @@ export const jsonLd = {
     {
       "@type": "WebSite",
       name: "William Santana",
-      url: "https://williamsantana.dev",
+      url: "https://portfolio-william-nu.vercel.app",
       publisher: {
         "@type": "Person",
         name: "William Santana",
@@ -26,7 +26,7 @@ export const jsonLd = {
     {
       "@type": "WebPage",
       name: "William Santana Portfolio",
-      url: "https://williamsantana.dev",
+      url: "https://portfolio-william-nu.vercel.app",
       description:
         "Portfolio showcasing modern web applications built with React, Next.js and TypeScript.",
     },
