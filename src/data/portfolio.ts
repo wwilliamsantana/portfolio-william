@@ -9,10 +9,39 @@ export const portfolioProjects = [
     demo: "https://orbit-tasks-ten.vercel.app/",
     github: "https://github.com/wwilliamsantana/orbit-tasks",
     featured: true,
-    stack: ["React", "Next.js", "TypeScript", "DnD Kit", "Tailwind"],
+    stack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "DnD Kit",
+      "Tailwind",
+      "Next-themes",
+      "React-hook-form",
+      "Context API",
+    ],
   },
   {
     id: 2,
+    title: "Aurora E-commerce",
+    subtitle: "Modern Jewelry E-commerce",
+    description:
+      "Designed to showcase immersive UI, WebGL animations, and modern frontend architecture.",
+    image: "/projects/aurora.png",
+    demo: "https://aurora-ecommerce-vert.vercel.app/",
+    github: "https://github.com/wwilliamsantana/aurora-ecommerce.git",
+    featured: true,
+    stack: [
+      "React",
+      " Next.js",
+      "Tailwind",
+      "TypeScript",
+      "Framer Motion",
+      "OGL",
+      "Zustand",
+    ],
+  },
+  {
+    id: 3,
     title: "Insight Board",
     subtitle: "Analytics Dashboard",
     description:
@@ -21,10 +50,17 @@ export const portfolioProjects = [
     demo: "https://insight-board-theta.vercel.app/",
     github: "https://github.com/wwilliamsantana/insight-board",
     featured: true,
-    stack: ["React", "Charts", "Tailwind", "Motion"],
+    stack: [
+      "React",
+      "Next.js",
+      "Recharts",
+      "Tailwind",
+      "Framer Motion",
+      "lucide React",
+    ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Bella Vista",
     subtitle: "Restaurant Landing",
     description:
@@ -33,10 +69,10 @@ export const portfolioProjects = [
     demo: "https://bella-vista-restaurant-iota.vercel.app/",
     github: "https://github.com/wwilliamsantana/bella-vista-restaurant",
     featured: true,
-    stack: ["Next.js", "Framer Motion", "Tailwind"],
+    stack: ["React.js", "Next.js", "Framer Motion", "Tailwind"],
   },
   {
-    id: 4,
+    id: 5,
     title: "FlowSync",
     subtitle: "SaaS Landing",
     description:
@@ -45,6 +81,6 @@ export const portfolioProjects = [
     demo: "https://flowsync-livid.vercel.app/",
     github: "https://github.com/wwilliamsantana/flowsync",
     featured: true,
-    stack: ["React", "Next", "TypeScript"],
+    stack: ["React", "Next", "TypeScript", "Tailwind", "Framer Motion"],
   },
 ];
